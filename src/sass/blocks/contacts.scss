@@ -1,0 +1,33 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.contacts {
+    padding-bottom: 10px;
+    .divider {
+        background-color: #fff;
+    }
+    background-color: $bordo;
+    margin: 0;
+    &__title {
+        margin: 10px auto;
+        text-align: center;
+        font-size: 16px;
+        color: #FFF;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    }
+    &__social {
+        display: flex;
+        width: 165px;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+}

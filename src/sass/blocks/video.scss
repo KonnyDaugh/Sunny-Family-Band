@@ -3,6 +3,7 @@
 .video {
     background-color: $caramel;
     position: relative;
+    padding-bottom: 20px;
     .trumpet {
         position: absolute;
         left: 10px;
@@ -26,11 +27,9 @@
         width: 100%;
     }
     .guitar {
+        margin: 0;
         position: absolute;
         right: 10px;
         bottom: -50px;
-    }
-    .divider {
-        background-color: #fff;
     }
 }
