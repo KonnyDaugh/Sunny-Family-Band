@@ -1,13 +1,13 @@
 @use '/src/sass/base/variables.scss' as *;
 
-// @use '/src/sass/blocks/header.scss';
-// @use '/src/sass/blocks/hero.scss';
 @use '/src/sass/blocks/promo.scss';
+@use '/src/sass/blocks/menu.scss';
 * {
     font-family: 'Raleway', sans-serif;
 }
 
 body {
+    margin: 0;
     background-color: $light;
 }
 
