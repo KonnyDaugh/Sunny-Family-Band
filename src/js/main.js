@@ -2,12 +2,17 @@ import '../sass/style.scss';
 
 const burger = document.querySelector('.burger'),
       menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close');
+      closeElem = document.querySelector('.menu__close'),
+      menuAbout = document.querySelector('.menu__about');
 
 burger.addEventListener('click', () => {
     menu.classList.add('active');
 });
 
 closeElem.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
+
+menuAbout.addEventListener('click', () => {
     menu.classList.remove('active');
 });
