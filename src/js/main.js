@@ -46,3 +46,7 @@ function togglePlay() {
     playIcon.addEventListener("click", togglePlay);
     pauseIcon.addEventListener("click", togglePlay);
 });
+
+// document.getElementById("scrollToPlaylist").addEventListener("click", function() {
+// document.getElementById("playlist").scrollIntoView({ behavior: "smooth" });
+// });
