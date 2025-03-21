@@ -3,7 +3,7 @@ import '../sass/style.scss';
 const burger = document.querySelector('.burger'),
       menu = document.querySelector('.menu'),
       closeElem = document.querySelector('.menu__close'),
-      menuAbout = document.querySelector('.menu__about');
+      menuLinks = document.querySelectorAll('.menu__list a');
 
 burger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -13,8 +13,15 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
-menuAbout.addEventListener('click', () => {
-    menu.classList.remove('active');
+menuLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        menu.classList.remove('active'); // Закрываем меню
+        const targetId = link.getAttribute('href'); // Получаем ID секции
+        if (targetId.startsWith("#")) { 
+            event.preventDefault(); // Отменяем стандартный переход
+            document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+        }
+    });
 });
 
 let currentAudio = null;
@@ -46,7 +53,3 @@ function togglePlay() {
     playIcon.addEventListener("click", togglePlay);
     pauseIcon.addEventListener("click", togglePlay);
 });
-
-// document.getElementById("scrollToPlaylist").addEventListener("click", function() {
-// document.getElementById("playlist").scrollIntoView({ behavior: "smooth" });
-// });

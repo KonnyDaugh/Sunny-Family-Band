@@ -51,12 +51,18 @@
       </div>
       <div class="menu__block">
         <ul class="menu__list">
-          <li class="menu__list-item menu__about">
+          <li class="menu__list-item">
             <a href="#about">About us</a>
           </li>
-          <li class="menu__list-item"><a href="#">Playlist</a></li>
-          <li class="menu__list-item"><a href="#">Video-gallery</a></li>
-          <li class="menu__list-item"><a href="#">Contact us</a></li>
+          <li class="menu__list-item">
+            <a href="#playlist">Playlist</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#video">Video-gallery</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#contacts">Contact us</a>
+          </li>
         </ul>
         <div class="menu__social">
           <a href="#" class="menu__social-link"
@@ -116,7 +122,9 @@
       </p>
       <div class="about__wrapper">
         <img src="/src/img/about_img_mob.png" alt="photo" class="about__img" />
-        <button class="about__btn">contacts</button>
+        <button onclick="location.href='#contacts'" class="about__btn">
+          contacts
+        </button>
       </div>
       <div class="saxophone">
         <img src="/src/img/saxophone.png" alt="saxophone" />
@@ -325,7 +333,7 @@
       </div>
     </section>
 
-    <footer class="contacts">
+    <footer id="contacts" class="contacts">
       <div class="divider"></div>
       <h2 class="contacts__title">Contact us</h2>
       <div class="contacts__wrap">
