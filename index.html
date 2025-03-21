@@ -127,24 +127,137 @@
       </h3>
       <ul class="playlist__wrap">
         <li class="playlist__item">
-          <img
-            src="/src/icons/playlist_icon.svg"
-            alt="play"
-            class="playlist__item-icon"
-          />
+          <div
+            class="audio-player playlist__item-audio"
+            data-audio="all_about_that_bass.mp3"
+          >
+            <audio src="/src/audio/all_about_that_bass.mp3"></audio>
+            <svg
+              class="playIcon audio-control"
+              viewBox="0 0 24 24"
+              fill="black"
+            >
+              <polygon points="5,3 19,12 5,21"></polygon>
+            </svg>
+            <svg
+              class="pauseIcon audio-control"
+              viewBox="0 0 24 24"
+              fill="black"
+              style="display: none"
+            >
+              <rect x="6" y="4" width="4" height="16"></rect>
+              <rect x="14" y="4" width="4" height="16"></rect>
+            </svg>
+          </div>
           <p class="playlist__item-text">
             All about that bass (original by Meghan Trainor)
           </p>
         </li>
         <li class="playlist__item">
-          <img
-            src="/src/icons/playlist_icon.svg"
-            alt="play"
-            class="playlist__item-icon"
-          />
+          <div
+            class="audio-player playlist__item-audio"
+            data-audio="dont_worry_be_happy.mp3"
+          >
+            <audio src="/src/audio/dont_worry_be_happy.mp3"></audio>
+            <svg
+              class="playIcon audio-control"
+              viewBox="0 0 24 24"
+              fill="black"
+            >
+              <polygon points="5,3 19,12 5,21"></polygon>
+            </svg>
+            <svg
+              class="pauseIcon audio-control"
+              viewBox="0 0 24 24"
+              fill="black"
+              style="display: none"
+            >
+              <rect x="6" y="4" width="4" height="16"></rect>
+              <rect x="14" y="4" width="4" height="16"></rect>
+            </svg>
+          </div>
           <p class="playlist__item-text">
             Don’t worry Be happy (original by Bobby McFerrin)
           </p>
+        </li>
+        <li class="playlist__item">
+          <div
+            class="audio-player playlist__item-audio"
+            data-audio="hey_nah_nah_nah.mp3"
+          >
+            <audio src="/src/audio/hey_nah_nah_nah.mp3"></audio>
+            <svg
+              class="playIcon audio-control"
+              viewBox="0 0 24 24"
+              fill="black"
+            >
+              <polygon points="5,3 19,12 5,21"></polygon>
+            </svg>
+            <svg
+              class="pauseIcon audio-control"
+              viewBox="0 0 24 24"
+              fill="black"
+              style="display: none"
+            >
+              <rect x="6" y="4" width="4" height="16"></rect>
+              <rect x="14" y="4" width="4" height="16"></rect>
+            </svg>
+          </div>
+          <p class="playlist__item-text">
+            Hey Nah Nah Nah (original by Vaya Con Dios)
+          </p>
+        </li>
+        <li class="playlist__item">
+          <div
+            class="audio-player playlist__item-audio"
+            data-audio="mama_said.mp3"
+          >
+            <audio src="/src/audio/mama_said.mp3"></audio>
+            <svg
+              class="playIcon audio-control"
+              viewBox="0 0 24 24"
+              fill="black"
+            >
+              <polygon points="5,3 19,12 5,21"></polygon>
+            </svg>
+            <svg
+              class="pauseIcon audio-control"
+              viewBox="0 0 24 24"
+              fill="black"
+              style="display: none"
+            >
+              <rect x="6" y="4" width="4" height="16"></rect>
+              <rect x="14" y="4" width="4" height="16"></rect>
+            </svg>
+          </div>
+          <p class="playlist__item-text">
+            Mama said (original by The Shirelles)
+          </p>
+        </li>
+        <li class="playlist__item">
+          <div
+            class="audio-player playlist__item-audio"
+            data-audio="smooth_operator.mp3"
+          >
+            <audio src="/src/audio/smooth_operator.mp3"></audio>
+            <svg
+              class="playIcon audio-control"
+              viewBox="0 0 24 24"
+              fill="black"
+            >
+              <polygon points="5,3 19,12 5,21"></polygon>
+            </svg>
+            <svg
+              class="pauseIcon audio-control"
+              viewBox="0 0 24 24"
+              fill="black"
+              style="display: none"
+            >
+              <rect x="6" y="4" width="4" height="16"></rect>
+              <rect x="14" y="4" width="4" height="16"></rect>
+            </svg>
+          </div>
+          <p class="playlist__item-text">Smooth Operator (original by Sade)</p>
         </li>
       </ul>
     </section>
@@ -156,8 +269,52 @@
       </div>
       <h2 class="video__title">Video-gallery</h2>
       <div class="video__wrap">
-        <img src="/src/img/video_item-1.png" alt="video" class="video__img" />
-        <img src="/src/img/video_item-2.png" alt="video" class="video__img" />
+        <span class="video__item-title">Demo</span>
+        <a href="https://youtu.be/7sqqUnowDh0" target="_blank">
+          <img
+            class="video__img"
+            width="100%"
+            src="https://img.youtube.com/vi/7sqqUnowDh0/maxresdefault.jpg"
+            alt="Смотреть видео"
+          />
+          <img
+            class="video__img-icon"
+            src="/src/icons/video_icon.svg"
+            alt="play"
+          />
+        </a>
+        <span class="video__item-title"
+          >Twist again (original by Chabby Checker)</span
+        >
+        <a href="https://youtu.be/S7faQ-dU44k" target="_blank">
+          <img
+            class="video__img"
+            width="100%"
+            src="https://img.youtube.com/vi/S7faQ-dU44k/maxresdefault.jpg"
+            alt="Смотреть видео"
+          />
+          <img
+            class="video__img-icon"
+            src="/src/icons/video_icon.svg"
+            alt="play"
+          />
+        </a>
+        <span class="video__item-title"
+          >Minor swing (original by Django Reinhardt)</span
+        >
+        <a href="https://youtu.be/nEnSp2lRHUU" target="_blank">
+          <img
+            class="video__img"
+            width="100%"
+            src="https://img.youtube.com/vi/nEnSp2lRHUU/maxresdefault.jpg"
+            alt="Смотреть видео"
+          />
+          <img
+            class="video__img-icon"
+            src="/src/icons/video_icon.svg"
+            alt="play"
+          />
+        </a>
       </div>
       <div class="guitar">
         <img src="/src/img/guitar.png" alt="guitar" />
