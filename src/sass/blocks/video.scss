@@ -1,7 +1,7 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .video {
-    background-color: $caramel;
+    background: radial-gradient(circle, #F0D396, #E8B86D, #D89A50);
     position: relative;
     padding-bottom: 20px;
     .trumpet {

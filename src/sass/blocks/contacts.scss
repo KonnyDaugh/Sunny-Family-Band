@@ -2,11 +2,11 @@
 
 .contacts {
     padding-bottom: 10px;
+    background: linear-gradient(to top, #633A3B, #7D4F50, #9B6B6C);
+    margin: 0;
     .divider {
         background-color: #fff;
     }
-    background-color: $bordo;
-    margin: 0;
     &__title {
         margin: 10px auto;
         text-align: center;
