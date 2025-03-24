@@ -18,6 +18,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        row-gap: 10px;
         a {
             color: #fff;
             text-decoration: none;
@@ -28,6 +29,24 @@
         display: flex;
         width: 165px;
         justify-content: space-between;
-        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contacts {
+        &__title {
+            font-size: 28px;
+        }
+        &__wrap {
+            a {
+                font-size: 16px;
+            }
+        }
+        &__social {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
 }

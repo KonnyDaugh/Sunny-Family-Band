@@ -48,3 +48,19 @@
         justify-content: space-around;
     }
 }
+
+@media (min-width: 768px) {
+    .menu {
+        &__list-item {
+            a {
+                font-size: 30px;
+            }
+        }
+        &__social {
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }   
+}

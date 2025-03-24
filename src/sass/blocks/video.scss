@@ -5,9 +5,13 @@
     position: relative;
     padding-bottom: 20px;
     .trumpet {
+        width: 100px;
         position: absolute;
         left: 10px;
-        top: -25px;
+        top: -12px;
+        img {
+            width: 100%;
+        }
     }
     &__title {
         margin: 20px auto 0 auto;
@@ -40,9 +44,36 @@
         left: calc(50% - 15px);
     }
     .guitar {
+        width: 173px;
         margin: 0;
         position: absolute;
-        right: 10px;
-        bottom: -50px;
+        right: -30px;
+        bottom: -25px;
+        img {
+            width: 100%;
+            transform: rotate(-80deg);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .video {
+        .trumpet {
+            width: 150px;
+            left: 30px;
+        }
+        &__title {
+            font-size: 36px;
+        }
+        &__item-title {
+            font-size: 16px;
+        }
+        &__wrap {
+            width: 400px;
+        }
+        .guitar {
+            width: 225px;
+            right: -7px;
+        }
     }
 }
