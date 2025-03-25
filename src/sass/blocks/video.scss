@@ -77,3 +77,14 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+    .video {
+        .trumpet {
+            width: 200px;
+        }
+        &__wrap {
+            width: 800px;
+        }
+    }
+}
