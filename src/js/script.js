@@ -1,3 +1,10 @@
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 import '../sass/style.scss';
 
 const burger = document.querySelector('.burger'),
@@ -23,6 +30,14 @@ menuLinks.forEach(link => {
         }
     });
 });
+
+new Swiper(".swiper", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
 
 let currentAudio = null;
 
