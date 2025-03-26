@@ -32,6 +32,7 @@ menuLinks.forEach(link => {
 });
 
 new Swiper(".swiper", {
+      modules: [Navigation, Pagination],
       loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
