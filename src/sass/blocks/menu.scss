@@ -47,6 +47,13 @@
         width: 165px;
         justify-content: space-around;
     }
+    &__img {
+        width: 180px;
+        height: 180px;
+        img {
+            width: 100%;
+        }
+    }
 }
 
 @media (min-width: 768px) {
