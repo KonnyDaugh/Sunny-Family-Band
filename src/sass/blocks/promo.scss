@@ -92,9 +92,6 @@
         &__subtitle {
             font-size: 16px;
         }
-        // &__slider {
-        //     height: 100%;
-        // }
         h2 {
             font-size: 36px;
         }   
@@ -139,8 +136,8 @@
                 }
             }            
         }
-        // &__slider {
-        //     height: 1300px;
-        // }
+        &__slider {
+            width: 70%;
+        }
     }
 }

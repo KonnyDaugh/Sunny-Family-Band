@@ -38,6 +38,7 @@
         align-items: self-start;
     }
     &__wrap {
+        margin: 0 auto;
         &-tabs {
             display: flex;
             justify-content: center;
@@ -55,6 +56,7 @@
     }
     &__content {
         display: none;
+        width: 100vw;
         .active {
             display: block;
         }
@@ -97,6 +99,10 @@
         }
         &__wrap {
             padding: 0 50px;
+            width: 600px;
+        }
+        &__content {
+            width: 100%;
         }
         &__text {
             width: 100%;
@@ -113,6 +119,20 @@
         .saxophone {
             width: 150px;
             bottom: -85px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .about {
+        &__wrap {
+            width: 1000px;
+            li {
+                font-size: 18px;
+            }
+        }
+        &__text {
+            font-size: 20px;
         }
     }
 }
