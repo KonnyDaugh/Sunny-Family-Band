@@ -69,3 +69,28 @@ function togglePlay() {
     playIcon.addEventListener("click", togglePlay);
     pauseIcon.addEventListener("click", togglePlay);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.about__wrap-tab');
+    const contents = document.querySelectorAll('.about__content');
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const lang = tab.getAttribute('data-lang');
+
+        // Удаляем и добавляем active класс
+        tabs.forEach((btn) => btn.classList.remove('active'));
+        tab.classList.add('active');
+
+        // Показываем нужный языковой блок
+        contents.forEach((content) => {
+          content.style.display =
+            content.getAttribute('data-lang') === lang ? 'block' : 'none';
+        });
+      });
+    });
+
+    // Активируем по умолчанию английский таб
+    const defaultTab = document.querySelector('.about__wrap-tab[data-lang="en"]');
+    if (defaultTab) defaultTab.click();
+  });

@@ -37,6 +37,28 @@
         justify-content: space-around;
         align-items: self-start;
     }
+    &__wrap {
+        &-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        &-tab {
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            &.active {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__content {
+        display: none;
+        .active {
+            display: block;
+        }
+    }
     &__img {
         width: 200px;
         height: 200px;
