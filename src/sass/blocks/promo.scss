@@ -9,6 +9,7 @@
     &__header {
         position: relative;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         .divider {
@@ -26,19 +27,13 @@
         color: #000;
         font-size: 12px;
         font-weight: 400;
+        text-align: center;
     }
     .burger {
-        display: flex;
-        height: 20px;
-        width: 23px;
-        flex-direction: column;
-        gap: 5px;
-        span {
-            display: block;
-            width: 23px;
-            height: 2px;
-            background-color: #000;
-        }
+        width: 40px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: $bordo;
     }
     &__nav {
         display: none;
