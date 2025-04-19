@@ -24,12 +24,17 @@ closeElem.addEventListener('click', () => {
 
 menuLinks.forEach(link => {
     link.addEventListener('click', (event) => {
-        menu.classList.remove('active'); // Закрываем меню
-        const targetId = link.getAttribute('href'); // Получаем ID секции
-        if (targetId.startsWith("#")) { 
-            event.preventDefault(); // Отменяем стандартный переход
+        const targetId = link.getAttribute('href');
+        
+        // Если это якорь (а не внешняя ссылка)
+        if (targetId.startsWith("#")) {
+            event.preventDefault(); // Отключаем стандартное поведение
             document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
         }
+
+        // В любом случае: закрываем меню и разблокируем прокрутку
+        menu.classList.remove('active');
+        document.body.classList.remove('lock');
     });
 });
 
