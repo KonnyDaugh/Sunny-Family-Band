@@ -33,3 +33,28 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .offer {
+        &__wrap {
+            width: 400px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .offer {
+        &__title {
+            font-size: 36px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__wrap {
+            width: 800px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
