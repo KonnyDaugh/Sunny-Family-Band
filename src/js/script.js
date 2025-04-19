@@ -14,10 +14,12 @@ const burger = document.querySelector('.burger'),
 
 burger.addEventListener('click', () => {
     menu.classList.add('active');
+    document.body.classList.add('lock');
 });
 
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
+    document.body.classList.remove('lock');
 });
 
 menuLinks.forEach(link => {
