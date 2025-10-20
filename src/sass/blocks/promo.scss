@@ -12,6 +12,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        padding-bottom: 10px;
         .divider {
             position: absolute;
             bottom: 0;
@@ -45,7 +46,19 @@
         cursor: pointer;
     }
     &__nav {
-        display: none;
+        &-menu {
+            display: none;
+        }
+        &-social {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+    
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
     }
     &__slider {
         position: relative;
@@ -133,15 +146,15 @@
                     font-size: 20px;
                 }                
             }
-            &-social {
-                display: flex;
-                justify-content: center;
-                gap: 25px;
-                img {
-                    width: 25px;
-                    height: 25px;
-                }
-            }            
+            // &-social {
+            //     display: flex;
+            //     justify-content: center;
+            //     gap: 25px;
+            //     img {
+            //         width: 25px;
+            //         height: 25px;
+            //     }
+            // }            
         }
         &__slider {
             width: 70%;

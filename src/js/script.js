@@ -7,36 +7,36 @@ import 'swiper/css/pagination';
 
 import '../sass/style.scss';
 
-const burger = document.querySelector('.burger'),
-      menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close'),
-      menuLinks = document.querySelectorAll('.menu__list a');
+// const burger = document.querySelector('.burger'),
+//       menu = document.querySelector('.menu'),
+//       closeElem = document.querySelector('.menu__close'),
+//       menuLinks = document.querySelectorAll('.menu__list a');
 
-burger.addEventListener('click', () => {
-    menu.classList.add('active');
-    document.body.classList.add('lock');
-});
+// burger.addEventListener('click', () => {
+//     menu.classList.add('active');
+//     document.body.classList.add('lock');
+// });
 
-closeElem.addEventListener('click', () => {
-    menu.classList.remove('active');
-    document.body.classList.remove('lock');
-});
+// closeElem.addEventListener('click', () => {
+//     menu.classList.remove('active');
+//     document.body.classList.remove('lock');
+// });
 
-menuLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-        const targetId = link.getAttribute('href');
+// menuLinks.forEach(link => {
+//     link.addEventListener('click', (event) => {
+//         const targetId = link.getAttribute('href');
         
-        // Если это якорь (а не внешняя ссылка)
-        if (targetId.startsWith("#")) {
-            event.preventDefault(); // Отключаем стандартное поведение
-            document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
-        }
+//         // Если это якорь (а не внешняя ссылка)
+//         if (targetId.startsWith("#")) {
+//             event.preventDefault(); // Отключаем стандартное поведение
+//             document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+//         }
 
-        // В любом случае: закрываем меню и разблокируем прокрутку
-        menu.classList.remove('active');
-        document.body.classList.remove('lock');
-    });
-});
+//         // В любом случае: закрываем меню и разблокируем прокрутку
+//         menu.classList.remove('active');
+//         document.body.classList.remove('lock');
+//     });
+// });
 
 new Swiper(".swiper", {
       modules: [Navigation, Pagination],
@@ -47,35 +47,35 @@ new Swiper(".swiper", {
       },
     });
 
-let currentAudio = null;
+// let currentAudio = null;
 
-document.querySelectorAll('.audio-player').forEach(player => {
-    const audio = player.querySelector('audio');
-    const playIcon = player.querySelector('.playIcon');
-    const pauseIcon = player.querySelector('.pauseIcon');
+// document.querySelectorAll('.audio-player').forEach(player => {
+//     const audio = player.querySelector('audio');
+//     const playIcon = player.querySelector('.playIcon');
+//     const pauseIcon = player.querySelector('.pauseIcon');
 
-function togglePlay() {
-    if (currentAudio && currentAudio !== audio) {
-        currentAudio.pause(); // Останавливаем другой играющий аудиофайл
-        currentAudio.closest('.audio-player').querySelector('.playIcon').style.display = "block";
-        currentAudio.closest('.audio-player').querySelector('.pauseIcon').style.display = "none";
-    }
-    if (audio.paused) {
-        audio.play();
-        playIcon.style.display = "none";
-        pauseIcon.style.display = "block";
-        currentAudio = audio; // Запоминаем текущий аудиофайл
-    } else {
-        audio.pause();
-        playIcon.style.display = "block";
-        pauseIcon.style.display = "none";
-        currentAudio = null;
-        }
-    }
+// function togglePlay() {
+//     if (currentAudio && currentAudio !== audio) {
+//         currentAudio.pause(); // Останавливаем другой играющий аудиофайл
+//         currentAudio.closest('.audio-player').querySelector('.playIcon').style.display = "block";
+//         currentAudio.closest('.audio-player').querySelector('.pauseIcon').style.display = "none";
+//     }
+//     if (audio.paused) {
+//         audio.play();
+//         playIcon.style.display = "none";
+//         pauseIcon.style.display = "block";
+//         currentAudio = audio; // Запоминаем текущий аудиофайл
+//     } else {
+//         audio.pause();
+//         playIcon.style.display = "block";
+//         pauseIcon.style.display = "none";
+//         currentAudio = null;
+//         }
+//     }
 
-    playIcon.addEventListener("click", togglePlay);
-    pauseIcon.addEventListener("click", togglePlay);
-});
+//     playIcon.addEventListener("click", togglePlay);
+//     pauseIcon.addEventListener("click", togglePlay);
+// });
 
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.about__wrap-tab');
