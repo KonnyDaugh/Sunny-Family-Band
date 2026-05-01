@@ -1,5 +1,6 @@
 @use '/src/sass/base/variables.scss' as *;
 
+@use '/src/sass/blocks/header.scss';
 @use '/src/sass/blocks/promo.scss';
 @use '/src/sass/blocks/menu.scss';
 @use '/src/sass/blocks/about.scss';
@@ -14,7 +15,7 @@
 
 body {
     margin: 0;
-    background: $light;
+    background: $background-light;
 }
 
 body.lock {
@@ -23,6 +24,12 @@ body.lock {
 
 html {
     scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 h1, h2 {
